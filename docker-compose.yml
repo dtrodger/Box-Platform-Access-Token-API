@@ -1,0 +1,9 @@
+version: '3'
+services:
+  box-platform-token-api:
+    build: .
+    networks:
+      - box-platform-token-api
+networks:
+  box-platform-token-api:
+    driver: "bridge"

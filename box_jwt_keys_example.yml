@@ -1,0 +1,8 @@
+boxAppSettings:
+  appAuth:
+    passphrase:
+    privateKey: ""
+    publicKeyID:
+  clientID:
+  clientSecret:
+enterpriseID: ""
