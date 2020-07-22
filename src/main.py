@@ -56,18 +56,18 @@ def get_box_platform_access_token() -> str:
 
 
 def validate_username_password(
-        auth_username: Union[str, None],
-        auth_password: Union[str, None]
+        username: Union[str, None],
+        password: Union[str, None]
 ) -> bool:
     """
     Validates a username and password against the user store
     """
     valid = False
     if (
-        auth_username
-        and auth_password
-        and auth_username in USER_STORE.keys()
-        and USER_STORE.get(auth_username) == auth_password
+        username
+        and password
+        and username in USER_STORE.keys()
+        and USER_STORE.get(username) == password
     ):
         valid = True
 
